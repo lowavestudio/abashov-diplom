@@ -1053,6 +1053,7 @@ footer {
 }
 
 /* Responsive Overrides */
+/* Responsive Overrides */
 @media (max-width: 992px) {
   .chapter-container {
     grid-template-columns: 1fr;
@@ -1109,9 +1110,32 @@ footer {
   }
   
   section {
-    padding: 70px 0;
+    padding: 60px 0;
   }
   
+  /* Reduced paddings for mobile content panels */
+  .tab-content {
+    padding: 24px 20px;
+    min-height: auto;
+  }
+  
+  .cnc-flow-container {
+    padding: 24px 20px;
+  }
+  
+  .efficiency-card, .calc-card {
+    padding: 24px 20px;
+  }
+  
+  .intro-card {
+    padding: 24px 20px;
+  }
+  
+  .problem-statement {
+    padding: 24px;
+  }
+  
+  /* Stepper navigation horizontal scroll */
   .cnc-steps-nav {
     overflow-x: auto;
     padding-bottom: 12px;
@@ -1125,6 +1149,60 @@ footer {
   .cnc-step-pane.active {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+  
+  /* Economics Table Mobile Responsiveness Fix */
+  .comparison-table {
+    min-width: 600px; /* Forces table to overflow instead of squishing columns */
+  }
+  
+  /* Custom scrollbar styling for scrollable containers on mobile */
+  .chapter-tabs::-webkit-scrollbar,
+  .cnc-steps-nav::-webkit-scrollbar,
+  .comparison-table-wrapper::-webkit-scrollbar {
+    height: 4px;
+  }
+  .chapter-tabs::-webkit-scrollbar-track,
+  .cnc-steps-nav::-webkit-scrollbar-track,
+  .comparison-table-wrapper::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 2px;
+  }
+  .chapter-tabs::-webkit-scrollbar-thumb,
+  .cnc-steps-nav::-webkit-scrollbar-thumb,
+  .comparison-table-wrapper::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 2px;
+  }
+}
+
+/* Small smartphones specific styles */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+  }
+  .hero-subtitle {
+    font-size: 1.05rem;
+    margin-bottom: 24px;
+  }
+  .hero-meta {
+    padding: 16px;
+    grid-template-columns: 1fr;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-buttons .btn {
+    width: 100%;
+  }
+  .modal-close {
+    top: 15px;
+    right: 15px;
+    font-size: 2.5rem;
+  }
+  .modal {
+    padding: 20px;
   }
 }
 
