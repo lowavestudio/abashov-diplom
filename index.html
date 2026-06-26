@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дипломный проект: Современное оборудование в столярном деле</title>
+  <meta name="description" content="Презентация выпускной квалификационной работы студента ГБПОУ «ОзТК» Абашова Алексея Евгеньевича. Тема: Современное оборудование, станки и инструмент в профессии мастера столярных работ.">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header id="mainHeader">
+    <div class="container nav-container">
+      <a href="#" class="logo" id="navLogo">
+        <div class="logo-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+        <span>ОзТК <strong class="highlight">2026</strong></span>
+      </a>
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#intro" class="nav-link active" id="link-intro">Введение</a></li>
+          <li><a href="#modernization" class="nav-link" id="link-mod">1. Модернизация</a></li>
+          <li><a href="#competencies" class="nav-link" id="link-comp">2. Компетенции</a></li>
+          <li><a href="#economics" class="nav-link" id="link-econ">Экономика</a></li>
+          <li><a href="#appendix" class="nav-link" id="link-app">Приложения</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero" style="background-image: url('hero.webp');">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-tag">Проектная работа</span>
+        <h1 class="hero-title">Современное оборудование, станки и инструмент в профессии мастера столярных работ</h1>
+        <p class="hero-subtitle">Исследование эволюции столярного дела: от классического ручного инструмента до высокоточных систем ЧПУ и интеллектуальных цифровых мастерских.</p>
+        
+        <div class="hero-meta">
+          <div class="meta-item">
+            <span>Автор работы:</span>
+            <p>Абашов Алексей Евгеньевич</p>
+            <p style="font-size: 0.85rem; color: var(--text-muted); font-weight: 300;">Студент гр. МС 25 р ГБПОУ «ОзТК»</p>
+          </div>
+          <div class="meta-item">
+            <span>Руководитель:</span>
+            <p>Курзаков Олег Николаевич</p>
+            <p style="font-size: 0.85rem; color: var(--text-muted); font-weight: 300;">преподаватель ГБПОУ «ОзТК»</p>
+          </div>
+        </div>
+        
+        <div class="hero-buttons">
+          <a href="#intro" class="btn btn-primary" id="btnStart"><i class="fa-solid fa-circle-play"></i> Начать презентацию</a>
+          <a href="#economics" class="btn btn-secondary" id="btnEconJump"><i class="fa-solid fa-chart-line"></i> Экономический эффект</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Introduction Section -->
+  <section id="intro">
+    <div class="container">
+      <div class="section-header text-center" style="margin-left: auto; margin-right: auto;">
+        <span class="section-tag">Паспорт проекта</span>
+        <h2 class="section-title">Введение и актуальность исследования</h2>
+        <p class="section-desc">Трансформация тысячелетней профессии в эпоху цифровой интеграции и высокоточных производственных процессов.</p>
+      </div>
+
+      <div class="intro-grid">
+        <div class="intro-card" id="cardRelevance">
+          <div class="card-icon"><i class="fa-solid fa-fire-flame-simple"></i></div>
+          <h3>Актуальность</h3>
+          <p>Обусловлена стремительным обновлением парка оборудования в деревообработке. Старые стереотипы о столяре как о «человеке с фуганком» уходят в прошлое. Современная мастерская напоминает высокотехнологичный цех с ЧПУ, лазерами и 3D-моделированием. Мастеру необходимо разбираться в электронике и наладке, чтобы оставаться конкурентоспособным.</p>
+        </div>
+
+        <div class="intro-card" id="cardSubject">
+          <div class="card-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h3>Объект и предмет</h3>
+          <p><strong>Объект исследования:</strong> профессиональная деятельность мастера столярных работ в условиях современных производственных систем.<br><br><strong>Предмет исследования:</strong> современное технологическое оборудование, специализированные станки и инновационные инструменты.</p>
+        </div>
+
+        <div class="intro-card" id="cardGoal">
+          <div class="card-icon"><i class="fa-solid fa-trophy"></i></div>
+          <h3>Цель проекта</h3>
+          <p>Систематизировать обширные знания о современных технических средствах в профессии столяра и выявить, как их глубокое внедрение качественно влияет на профессиональные стандарты и квалификационные требования к специалисту нового времени.</p>
+        </div>
+
+        <div class="problem-statement" id="blockProblem">
+          <h3><i class="fa-solid fa-triangle-exclamation"></i> Проблема проекта</h3>
+          <p>Существует критическое противоречие между стремительным внедрением высокотехнологичного оборудования (станков с ЧПУ, лазерных систем, интеллектуального ручного электроинструмента) в современное производство и устаревшими подходами к подготовке молодых кадров, которые по-прежнему ориентированы преимущественно на традиционный ручной труд без формирования цифровых компетенций.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chapter 1: Technical Modernization -->
+  <section id="modernization" style="background-color: #121216;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Глава 1</span>
+        <h2 class="section-title">Техническая модернизация столярной мастерской</h2>
+        <p class="section-desc">Эволюция рабочего пространства столяра: переход от узкоспециализированных станков прошлого века к умным производственным ячейкам.</p>
+      </div>
+
+      <div class="chapter-container">
+        <!-- Sidebar Navigation Tabs -->
+        <aside class="chapter-tabs" id="techTabs">
+          <button class="tab-btn active" id="tabBtnCNC" data-tab="cnc"><i class="fa-solid fa-computer"></i> Станки и ЧПУ</button>
+          <button class="tab-btn" id="tabBtnHand" data-tab="hand"><i class="fa-solid fa-screwdriver-wrench"></i> Ручной инструмент</button>
+          <button class="tab-btn" id="tabBtnMeasure" data-tab="measure"><i class="fa-solid fa-ruler-combined"></i> Измерительные приборы</button>
+          <button class="tab-btn" id="tabBtnSupport" data-tab="support"><i class="fa-solid fa-fan"></i> Вспомогательные системы</button>
+        </aside>
+
+        <!-- Tab Content Panes -->
+        <main class="tab-content" id="techContent">
+          <!-- Pane 1: CNC & Machinery -->
+          <div class="tab-pane active" id="pane-cnc">
+            <h3>Многофункциональные станки и установки с ЧПУ</h3>
+            <p>Основой модернизации столярного цеха стали многофункциональные станки (комбинированные агрегаты), позволяющие экономить рабочую площадь, выполняя от 3 до 8 операций на одной станине. Форматно-раскроечные пилы обеспечивают микрометрическую точность раскроя (погрешность до 0.1 мм/м) за счет лазерных указателей и цифровых упоров.</p>
+            
+            <div class="tab-pane-grid">
+              <div class="tech-spec-card">
+                <h4>Преимущества ЧПУ систем:</h4>
+                <ul class="tech-list">
+                  <li><strong>Абсолютная повторяемость:</strong> изделия тиражируются тысячами без погрешностей и отклонений.</li>
+                  <li><strong>Сложная геометрия:</strong> фрезерование по 3 или 5 осям позволяет создавать объемные криволинейные детали.</li>
+                  <li><strong>Автоматизация:</strong> процесс резки идет автономно после загрузки G-кода и заготовки.</li>
+                  <li><strong>Экологичность раскроя:</strong> CAM-программы оптимально раскладывают детали на листе, минимизируя отходы.</li>
+                </ul>
+              </div>
+              <div class="tech-spec-card">
+                <h4>Инновационные решения:</h4>
+                <ul class="tech-list">
+                  <li><strong>Лазерные и гравировальные станки:</strong> выжигание узоров, логотипов, тонкая резка шпона без сколов.</li>
+                  <li><strong>Настольные ЧПУ:</strong> компактные системы (Shapeoko, X-Carve) для малых мастерских и прототипирования.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pane 2: Hand Power Tools -->
+          <div class="tab-pane" id="pane-hand">
+            <h3>Инновационный ручной электроинструмент</h3>
+            <p>Ручной электроинструмент претерпел технологическую революцию. Бесщеточные двигатели увеличили КПД и срок службы приборов в 3-5 раз. Встроенные микропроцессоры стабилизируют обороты под нагрузкой, плавно запускают двигатель и предотвращают перегрев.</p>
+            
+            <div class="tab-pane-grid">
+              <div class="tech-spec-card">
+                <h4>Основные виды инструмента:</h4>
+                <ul class="tech-list">
+                  <li><strong>Ручные фрезеры:</strong> оснащены микрометрической подачей (шаг до 0.1 мм) и реверсом.</li>
+                  <li><strong>Электрорубанки:</strong> модели с ЖК-дисплеями (например, Makita KP) выводят точную глубину строгания.</li>
+                  <li><strong>Шлифовальные машины:</strong> эксцентриковые (чистовые), ленточные (грубые) и дельтовидные (угловые).</li>
+                  <li><strong>Пильный инструмент:</strong> торцовочные пилы с протяжкой, погружные пилы с направляющими шинами.</li>
+                </ul>
+              </div>
+              <div class="tech-spec-card">
+                <h4>Аккумуляторная свобода:</h4>
+                <ul class="tech-list">
+                  <li><strong>Высоковольтные АКБ (36V-54V):</strong> мощность аккумуляторного инструмента сравнялась с сетевым.</li>
+                  <li><strong>Единые платформы:</strong> одна батарея подходит для десятков приборов в мастерской.</li>
+                  <li><strong>Мобильность:</strong> возможность работать без привязки к розеткам на выездных сборках.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pane 3: Smart Measuring Instruments -->
+          <div class="tab-pane" id="pane-measure">
+            <h3>Измерительные приборы нового поколения</h3>
+            <p>Точность столярного дела перешла на цифровой уровень. Традиционные линейки и угольники уступили место точным электронным датчикам, лазерным приборам и Bluetooth-совместимым инструментам.</p>
+            
+            <div class="tab-pane-grid">
+              <div class="tech-spec-card">
+                <h4>Цифровые измерители:</h4>
+                <ul class="tech-list">
+                  <li><strong>Лазерные дальномеры:</strong> дальность до 100 метров, автоматический расчет площадей и объемов по Пифагору.</li>
+                  <li><strong>Цифровые угломеры:</strong> отображение угла на ЖК-дисплее с точностью до 0.1° и функцией памяти.</li>
+                  <li><strong>Электронные штангенциркули:</strong> LCD-индикация размеров до 0.01 мм, передача данных по Bluetooth.</li>
+                </ul>
+              </div>
+              <div class="tech-spec-card">
+                <h4>Физико-геометрический контроль:</h4>
+                <ul class="tech-list">
+                  <li><strong>Лазерные нивелиры:</strong> построение перекрестных плоскостей и отвесов для идеальной навески мебели.</li>
+                  <li><strong>Цифровые влагомеры:</strong> измерение влажности древесины (норма 6-12% для мебели), предотвращающее деформации.</li>
+                  <li><strong>Акустические дефектоскопы:</strong> выявление скрытых сучков, пустот и гнили внутри массива без распиловки.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pane 4: Supporting systems -->
+          <div class="tab-pane" id="pane-support">
+            <h3>Вспомогательные системы и оснастка</h3>
+            <p>Современное производство немыслимо без развитой периферии, которая обеспечивает безопасность мастера, высокое качество покраски и снижает физические нагрузки.</p>
+            
+            <div class="tab-pane-grid">
+              <div class="tech-spec-card">
+                <h4>Безопасность и чистота:</h4>
+                <ul class="tech-list">
+                  <li><strong>Системы аспирации (пылеудаление):</strong> строительные пылесосы с HEPA-фильтрами задерживают 99.97% мелкодисперсной пыли.</li>
+                  <li><strong>Центральные циклоны:</strong> эффективная очистка воздуха в цехах с несколькими станками.</li>
+                  <li><strong>Антистатические шланги:</strong> защита от взрывоопасных искр и накопления статического электричества.</li>
+                </ul>
+              </div>
+              <div class="tech-spec-card">
+                <h4>Механизация труда:</h4>
+                <ul class="tech-list">
+                  <li><strong>Вакуумные подъемники:</strong> захват и перемещение плит ДСП весом до 50 кг силами одного оператора.</li>
+                  <li><strong>Рольганги (роликовые конвейеры):</strong> облегчение ручной подачи габаритных материалов.</li>
+                  <li><strong>Смазочно-охлаждающие системы:</strong> подача СОЖ на режущую кромку фрезы ЧПУ для продления службы инструмента.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chapter 2: Competencies -->
+  <section id="competencies">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Глава 2</span>
+        <h2 class="section-title">Новые профессиональные компетенции мастера</h2>
+        <p class="section-desc">Как меняется роль человека на производстве: от физического труда к интеллектуальной настройке и программированию.</p>
+      </div>
+
+      <div class="competencies-layout">
+        <div class="comp-text">
+          <h3>Мастер XXI века — это гибрид столяра, инженера-механика и IT-специалиста</h3>
+          <p>Внедрение высокоточного оборудования сместило акценты квалификации. Традиционная физическая сила уступает место техническому мышлению, знанию кинематики станков и умению работать с программным обеспечением.</p>
+          
+          <div class="comp-list">
+            <div class="comp-item">
+              <div class="comp-num">01</div>
+              <div class="comp-info">
+                <h4>Настройка и калибровка</h4>
+                <p>Мастер должен уметь выставлять параметры реза с точностью до десятых долей миллиметра (например, вылет ножей фуганка на 0.1-0.2 мм), используя индикаторные стойки и прецизионные щупы.</p>
+              </div>
+            </div>
+            
+            <div class="comp-item">
+              <div class="comp-num">02</div>
+              <div class="comp-info">
+                <h4>Цифровое проектирование и CAM</h4>
+                <p>Необходимо владеть CAD/CAM программами (AutoCAD, Fusion 360, ArtCAM, VCarve Pro). Мастер создает 3D-модель, задает траектории фрез, настраивает подачи и генерирует управляющий G-код.</p>
+              </div>
+            </div>
+            
+            <div class="comp-item">
+              <div class="comp-num">03</div>
+              <div class="comp-info">
+                <h4>Техническое обслуживание</h4>
+                <p>Контроль биения шпинделя, очистка ШВП, смазка кареток, резервное копирование настроек ЧПУ и мелкий ремонт датчиков.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="comp-img-wrapper" id="precisionImg">
+          <img src="precision.webp" alt="Цифровые измерения дерева" class="comp-img">
+          <div class="comp-img-overlay">
+            <p><i class="fa-solid fa-microchip"></i> Точность измерений до 0.01 мм определяет качество сборки мебели без ручной подгонки.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CNC Step-by-Step interactive visualizer (Table 1) -->
+      <div class="cnc-flow-container" id="cncFlow">
+        <div class="cnc-flow-header">
+          <span class="section-tag" style="color: var(--primary);">Интерактивный процесс</span>
+          <h3>Технологическая карта изготовления детали на станке с ЧПУ</h3>
+          <p style="margin-top: 10px;">Нажмите на этапы ниже, чтобы увидеть содержание работ и оборудование для каждого шага.</p>
+        </div>
+
+        <!-- Progress Steps Navigation -->
+        <div class="cnc-steps-nav" id="cncStepsNav">
+          <button class="cnc-step-indicator active" data-step="1" id="btnStep1">
+            <div class="cnc-step-circle">1</div>
+            <div class="cnc-step-label">3D Модель</div>
+          </button>
+          <button class="cnc-step-indicator" data-step="2" id="btnStep2">
+            <div class="cnc-step-circle">2</div>
+            <div class="cnc-step-label">G-код (УП)</div>
+          </button>
+          <button class="cnc-step-indicator" data-step="3" id="btnStep3">
+            <div class="cnc-step-circle">3</div>
+            <div class="cnc-step-label">Подготовка</div>
+          </button>
+          <button class="cnc-step-indicator" data-step="4" id="btnStep4">
+            <div class="cnc-step-circle">4</div>
+            <div class="cnc-step-label">Базирование</div>
+          </button>
+          <button class="cnc-step-indicator" data-step="5" id="btnStep5">
+            <div class="cnc-step-circle">5</div>
+            <div class="cnc-step-label">Черновая</div>
+          </button>
+          <button class="cnc-step-indicator" data-step="6" id="btnStep6">
+            <div class="cnc-step-circle">6</div>
+            <div class="cnc-step-label">Чистовая</div>
+          </button>
+          <button class="cnc-step-indicator" data-step="7" id="btnStep7">
+            <div class="cnc-step-circle">7</div>
+            <div class="cnc-step-label">Контроль</div>
+          </button>
+        </div>
+
+        <!-- Progress Content Panes -->
+        <div class="cnc-steps-content" id="cncStepsContent">
+          <!-- Step 1 -->
+          <div class="cnc-step-pane active" id="paneStep-1">
+            <div class="cnc-step-info">
+              <h3>Этап 1: Создание 3D-модели</h3>
+              <p>Разработка или загрузка цифровой трехмерной модели будущего изделия. На этом этапе определяются точные габаритные размеры, глубина рельефа резьбы, выбирается стратегия обработки и прорабатывается эстетика изделия.</p>
+              <div class="cnc-step-meta">
+                <strong>Оборудование и ПО:</strong>
+                <span>Персональный компьютер, ПО ArtCAM, Fusion 360, AutoCAD, SolidWorks, Blender, SketchUp.</span>
+              </div>
+            </div>
+            <div class="cnc-step-art">
+              <div class="cnc-icon-large" style="color: #60a5fa;"><i class="fa-solid fa-cubes"></i></div>
+              <p>Проектирование цифрового двойника детали</p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="cnc-step-pane" id="paneStep-2">
+            <div class="cnc-step-info">
+              <h3>Этап 2: Генерация управляющей программы (УП)</h3>
+              <p>Назначение траекторий движения фрезы (контурная, параллельная, зигзаг). Подбор режимов резания: скорость подачи заготовки (мм/мин), частота вращения шпинделя (об/мин), шаг прохода фрезы по глубине. Генерация итогового управляющего кода (G-кода).</p>
+              <div class="cnc-step-meta">
+                <strong>Оборудование и ПО:</strong>
+                <span>CAM-модуль программы, постпроцессор для конкретной модели станка.</span>
+              </div>
+            </div>
+            <div class="cnc-step-art">
+              <div class="cnc-icon-large" style="color: #34d399;"><i class="fa-solid fa-code"></i></div>
+              <p>Трансляция геометрии в систему команд G-кода</p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="cnc-step-pane" id="paneStep-3">
+            <div class="cnc-step-info">
+              <h3>Этап 3: Выбор и установка фрезы</h3>
+              <p>Подбор фрезы по диаметру, количеству зубьев и типу (концевые, сферические, конические - для черновой или чистовой обработки). Установка цанги нужного размера, фиксация хвостовика фрезы в шпинделе с выдерживанием теплового зазора (1-2 мм от дна цанги).</p>
+              <div class="cnc-step-meta">
+                <strong>Инструменты:</strong>
+                <span>Набор фрез, ключи для цанги, динамометрический ключ для точной затяжки.</span>
+              </div>
+            </div>
+            <div class="cnc-step-art">
+              <div class="cnc-icon-large" style="color: #fbbf24;"><i class="fa-solid fa-gears"></i></div>
+              <p>Установка режущего инструмента в шпиндель</p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="cnc-step-pane" id="paneStep-4">
+            <div class="cnc-step-info">
+              <h3>Этап 4: Привязка нуля станка (Базирование)</h3>
+              <p>Фиксация деревянной заготовки на рабочем столе станка с помощью вакуумного прижима или механических струбцин. Определение физической точки «ноль» по трем осям координат (X, Y, Z) относительно заготовки. Для оси Z применяется электроконтактный щуп или «метод листа бумаги».</p>
+              <div class="cnc-step-meta">
+                <strong>Инструменты:</strong>
+                <span>Пульт управления ЧПУ, щуп-калибратор, струбцины, вакуумный насос.</span>
+              </div>
+            </div>
+            <div class="cnc-step-art">
+              <div class="cnc-icon-large" style="color: #a78bfa;"><i class="fa-solid fa-crosshairs"></i></div>
+              <p>Сопряжение систем координат станка и заготовки</p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="cnc-step-pane" id="paneStep-5">
+            <div class="cnc-step-info">
+              <h3>Этап 5: Черновая обработка</h3>
+              <p>Снятие основного объема древесины. Фреза перемещается с высокой скоростью подачи и большой глубиной резания, удаляя лишний массив. Программа оставляет припуск (0,3–0,5 мм) на последующую чистовую отделку.</p>
+              <div class="cnc-step-meta">
+                <strong>Инструменты и оснастка:</strong>
+                <span>Фреза для черновой обработки (большого диаметра, 2-3 зуба), система пылеудаления.</span>
+              </div>
+            </div>
+            <div class="cnc-step-art">
+              <div class="cnc-icon-large" style="color: #f87171;"><i class="fa-solid fa-hammer"></i></div>
+              <p>Быстрое удаление основного объема материала</p>
+            </div>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="cnc-step-pane" id="paneStep-6">
+            <div class="cnc-step-info">
+              <h3>Этап 6: Чистовая обработка</h3>
+              <p>Финишный проход фрезы по контуру или рельефу. Фреза перемещается мелкими шагами (0,1–0,3 мм), формируя точную геометрию изделия, сложные узоры и гладкую поверхность, не требующую долгой ручной шлифовки.</p>
+              <div class="cnc-step-meta">
+                <strong>Инструменты:</strong>
+                <span>Чистовая фреза (мелкий шаг, 1-2 зуба, часто сферическая для 3D рельефов).</span>
+              </div>
+            </div>
+            <div class="cnc-step-art">
+              <div class="cnc-icon-large" style="color: #60a5fa;"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+              <p>Финишное формирование геометрии и узоров</p>
+            </div>
+          </div>
+
+          <!-- Step 7 -->
+          <div class="cnc-step-pane" id="paneStep-7">
+            <div class="cnc-step-info">
+              <h3>Этап 7: Контроль качества</h3>
+              <p>Снятие готового изделия со стола, визуальный осмотр на предмет отсутствия задиров, сколов волокон и шероховатости («ворсистости»). Измерение ключевых размеров штангенциркулем на соответствие чертежу.</p>
+              <div class="cnc-step-meta">
+                <strong>Инструменты контроля:</strong>
+                <span>Штангенциркуль цифровой, лупа, угольник, цифровой влагомер.</span>
+              </div>
+            </div>
+            <div class="cnc-step-art">
+              <div class="cnc-icon-large" style="color: #34d399;"><i class="fa-solid fa-square-check"></i></div>
+              <p>Проверка допусков и чистоты обработанной поверхности</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Economics & Interactive Calculator -->
+  <section id="economics" style="background-color: #121216;">
+    <div class="container">
+      <div class="section-header text-center" style="margin-left: auto; margin-right: auto;">
+        <span class="section-tag">Экономика проекта</span>
+        <h2 class="section-title">Расчет экономической эффективности</h2>
+        <p class="section-desc">Сравнение временных затрат при изготовлении мебели ручным инструментом, ручным электроинструментом и на станках с ЧПУ.</p>
+      </div>
+
+      <div class="economics-grid">
+        <!-- Baseline comparison card with Table 2 -->
+        <div class="efficiency-card" id="econTableCard">
+          <h3>Временные затраты на операции (по видам оборудования)</h3>
+          <div class="comparison-table-wrapper">
+            <table class="comparison-table" id="econTable">
+              <thead>
+                <tr>
+                  <th>№</th>
+                  <th>Вид операции</th>
+                  <th>Ручной инструмент</th>
+                  <th>Электроинструмент</th>
+                  <th>Станки / ЧПУ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Раскрой заготовок (ножки, царги, сиденье)</td>
+                  <td>25 мин</td>
+                  <td>10 мин</td>
+                  <td>5 мин</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Строгание (калибровка по толщине)</td>
+                  <td>40 мин</td>
+                  <td>12 мин</td>
+                  <td>4 мин</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Фрезеровка (шипы, пазы, кромки)</td>
+                  <td>60 мин</td>
+                  <td>18 мин</td>
+                  <td>6 мин</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Шлифовка поверхностей</td>
+                  <td>45 мин</td>
+                  <td>10 мин</td>
+                  <td>5. мин</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Сборка и подгонка деталей</td>
+                  <td>20 мин</td>
+                  <td>10 мин</td>
+                  <td>5 мин</td>
+                </tr>
+                <tr class="highlight-row">
+                  <td>—</td>
+                  <td><strong>Итого на 1 табурет:</strong></td>
+                  <td><strong>190 мин (3.1 ч)</strong></td>
+                  <td><strong>60 мин (1.0 ч)</strong></td>
+                  <td><strong>25 мин (0.4 ч)</strong></td>
+                </tr>
+                <tr class="highlight-row">
+                  <td>—</td>
+                  <td><strong>Итого на партию из 10 шт:</strong></td>
+                  <td><strong>1900 мин (31.6 ч)</strong></td>
+                  <td><strong>400 мин (6.6 ч)</strong></td>
+                  <td><strong>70 мин (1.2 ч)</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="margin-top: 15px; font-size: 0.85rem; line-height: 1.4;">
+            * <i>Примечание: При серийном производстве на станках время растет нелинейно, поскольку основное время тратится на единовременную пусконаладку и написание программы ЧПУ.</i>
+          </p>
+        </div>
+
+        <!-- Interactive Calculator Card -->
+        <div class="calc-card" id="econCalculator">
+          <div>
+            <h3>Калькулятор партии</h3>
+            <p class="calc-intro">Переместите ползунок, чтобы задать размер партии табуретов и наглядно увидеть колоссальное сокращение трудоемкости.</p>
+            
+            <div class="calc-input-group">
+              <label class="calc-label" for="quantitySlider">Количество изделий в партии:</label>
+              <div class="calc-slider-wrapper">
+                <input type="range" id="quantitySlider" class="calc-slider" min="1" max="50" value="10">
+                <div class="calc-number-val" id="quantityVal">10</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-results">
+            <div class="calc-res-item">
+              <span class="calc-res-label">Ручной инструмент:</span>
+              <div class="calc-res-value" id="resHand">31.7 <span>ч</span></div>
+            </div>
+            <div class="calc-res-item">
+              <span class="calc-res-label">Электроинструмент:</span>
+              <div class="calc-res-value" id="resPower">6.7 <span>ч</span></div>
+            </div>
+            <div class="calc-res-item">
+              <span class="calc-res-label">Современные станки / ЧПУ:</span>
+              <div class="calc-res-value calc-cnc" id="resCNC">1.2 <span>ч</span></div>
+            </div>
+            
+            <div class="calc-res-saving" id="resSaving">
+              Экономия времени на ЧПУ: 30.5 ч (96.2%)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appendix & Photo Gallery -->
+  <section id="appendix">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Приложения</span>
+        <h2 class="section-title">Иллюстрации и материалы работы</h2>
+        <p class="section-desc">Сравнение инструментария разных поколений и чертеж планировки современного столярного цеха.</p>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Card 1: Old vs New Planer -->
+        <div class="gallery-card" data-img="wood_planers" id="galPlaners">
+          <div class="gallery-img-wrapper">
+            <!-- Place a SVG placeholder for clean rendering -->
+            <svg viewBox="0 0 400 300" style="width:100%; height:100%; background:#1c1c24; display:block;">
+              <rect width="100%" height="100%" fill="#1a1a22"/>
+              <!-- Drawing a stylized hand planer and electric planer -->
+              <text x="50" y="60" fill="#94a3b8" font-size="14" font-family="sans-serif">Традиционный рубанок</text>
+              <rect x="50" y="80" width="100" height="40" rx="4" fill="#854d0e"/>
+              <path d="M70 80 L80 50 L110 50 L115 80 Z" fill="#b45309"/>
+              <rect x="135" y="70" width="10" height="50" fill="#a1a1aa"/>
+              
+              <text x="220" y="60" fill="#d97706" font-size="14" font-family="sans-serif" font-weight="bold">Электрорубанок (ЧПУ эра)</text>
+              <rect x="220" y="80" width="130" height="50" rx="8" fill="#1e3a8a"/>
+              <rect x="300" y="60" width="30" height="20" rx="4" fill="#0f172a"/>
+              <circle cx="250" cy="130" r="15" fill="#374151"/>
+              <circle cx="320" cy="130" r="15" fill="#374151"/>
+              <rect x="220" y="100" width="130" height="8" fill="#e2e8f0"/>
+              
+              <text x="50" y="220" fill="#ffffff" font-size="13" font-family="sans-serif">Ручной строгальный инструмент</text>
+              <text x="50" y="240" fill="#94a3b8" font-size="11" font-family="sans-serif">Калибровка зависит от силы мастера</text>
+              <text x="220" y="220" fill="#ffffff" font-size="13" font-family="sans-serif">Интеллектуальная стабилизация</text>
+              <text x="220" y="240" fill="#94a3b8" font-size="11" font-family="sans-serif">Точность съема до 0.1 мм с ЖК-дисплеем</text>
+            </svg>
+          </div>
+          <div class="gallery-caption">
+            <h4>Эволюция строгания</h4>
+            <p>Рубанок старого образца против цифрового электрорубанка.</p>
+          </div>
+        </div>
+
+        <!-- Card 2: Old vs New Drill -->
+        <div class="gallery-card" data-img="drills" id="galDrills">
+          <div class="gallery-img-wrapper">
+            <svg viewBox="0 0 400 300" style="width:100%; height:100%; background:#1c1c24; display:block;">
+              <rect width="100%" height="100%" fill="#1a1a22"/>
+              <text x="50" y="60" fill="#94a3b8" font-size="14" font-family="sans-serif">Коловорот (XIX-XX вв.)</text>
+              <!-- Drawing brace drill -->
+              <path d="M80 80 L80 140 L120 140 L120 100 L150 100" stroke="#a1a1aa" stroke-width="6" fill="none"/>
+              <circle cx="80" cy="80" r="10" fill="#78350f"/>
+              <rect x="110" y="130" width="20" height="20" rx="3" fill="#78350f"/>
+              <line x1="150" y1="100" x2="180" y2="100" stroke="#e2e8f0" stroke-width="3"/>
+              
+              <text x="220" y="60" fill="#d97706" font-size="14" font-family="sans-serif" font-weight="bold">Аккумуляторный шуруповерт</text>
+              <!-- Drawing cordless drill -->
+              <rect x="240" y="80" width="30" height="60" rx="5" fill="#0d9488" transform="rotate(15, 240, 80)"/>
+              <rect x="230" y="70" width="60" height="30" rx="5" fill="#0d9488"/>
+              <rect x="290" y="75" width="20" height="15" fill="#475569"/>
+              <rect x="230" y="130" width="35" height="15" rx="3" fill="#0f172a"/>
+              
+              <text x="50" y="220" fill="#ffffff" font-size="13" font-family="sans-serif">Коловорот ручной</text>
+              <text x="50" y="240" fill="#94a3b8" font-size="11" font-family="sans-serif">Медленное сверление за счет сил рук</text>
+              <text x="220" y="220" fill="#ffffff" font-size="13" font-family="sans-serif">Шуруповерт бесщеточный</text>
+              <text x="220" y="240" fill="#94a3b8" font-size="11" font-family="sans-serif">Мощность до 80 Нм, подсветка зоны реза</text>
+            </svg>
+          </div>
+          <div class="gallery-caption">
+            <h4>Эволюция сверления</h4>
+            <p>Ручной коловорот против бесщеточного шуруповерта.</p>
+          </div>
+        </div>
+
+        <!-- Card 3: Workshop Layout Plan -->
+        <div class="gallery-card" data-img="workshop_plan" id="galPlan">
+          <div class="gallery-img-wrapper">
+            <svg viewBox="0 0 400 300" style="width:100%; height:100%; background:#1c1c24; display:block;">
+              <rect width="100%" height="100%" fill="#1a1a22"/>
+              <!-- Grid pattern -->
+              <path d="M 0,50 L 400,50 M 0,100 L 400,100 M 0,150 L 400,150 M 0,200 L 400,200 M 0,250 L 400,250 M 50,0 L 50,300 M 100,0 L 100,300 M 150,0 L 150,300 M 200,0 L 200,300 M 250,0 L 250,300 M 300,0 L 300,300 M 350,0 L 350,300" stroke="#27273a" stroke-width="0.5" fill="none"/>
+              
+              <!-- Draw Plan Boxes -->
+              <rect x="30" y="30" width="70" height="50" fill="rgba(217, 119, 6, 0.1)" stroke="var(--primary)" stroke-width="1.5" rx="2"/>
+              <text x="35" y="55" fill="#ffffff" font-size="10" font-family="sans-serif">ЧПУ станок</text>
+              
+              <rect x="130" y="30" width="140" height="40" fill="rgba(255,255,255,0.05)" stroke="#94a3b8" stroke-width="1" rx="2"/>
+              <text x="165" y="52" fill="#ffffff" font-size="10" font-family="sans-serif">Сборочный стол</text>
+              
+              <rect x="30" y="110" width="50" height="60" fill="rgba(255,255,255,0.05)" stroke="#94a3b8" stroke-width="1" rx="2"/>
+              <text x="35" y="145" fill="#ffffff" font-size="10" font-family="sans-serif">Фуганок</text>
+              
+              <rect x="100" y="110" width="50" height="40" fill="rgba(255,255,255,0.05)" stroke="#94a3b8" stroke-width="1" rx="2"/>
+              <text x="105" y="132" fill="#ffffff" font-size="10" font-family="sans-serif">Рейсмус</text>
+              
+              <rect x="290" y="30" width="80" height="80" fill="rgba(217, 119, 6, 0.1)" stroke="var(--primary)" stroke-width="1.5" rx="2"/>
+              <text x="302" y="75" fill="#ffffff" font-size="10" font-family="sans-serif">Форматник</text>
+              
+              <circle cx="330" cy="220" r="25" fill="rgba(255,255,255,0.03)" stroke="#ef4444" stroke-dasharray="4"/>
+              <text x="312" y="223" fill="#fca5a5" font-size="9" font-family="sans-serif">Аспирация</text>
+              
+              <rect x="130" y="200" width="100" height="60" fill="rgba(255,255,255,0.05)" stroke="#94a3b8" stroke-width="1" rx="2"/>
+              <text x="155" y="235" fill="#ffffff" font-size="10" font-family="sans-serif">Верстак</text>
+            </svg>
+          </div>
+          <div class="gallery-caption">
+            <h4>Схема цеха</h4>
+            <p>Эргономичный план размещения оборудования в мастерской.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bibliography Section -->
+  <section id="bibliography" style="background-color: #121216;">
+    <div class="container">
+      <div class="section-header text-center" style="margin-left: auto; margin-right: auto; max-width: 600px;">
+        <span class="section-tag">Литература</span>
+        <h2 class="section-title">Список использованных источников</h2>
+        <p class="section-desc">Научные и учебные пособия, послужившие теоретической основой для проведения исследования.</p>
+      </div>
+
+      <ul class="biblio-list">
+        <li class="biblio-item">
+          <span class="biblio-index">1.</span>
+          <strong>Вереина Л. И., Ибаева Л. В.</strong> Изготовление изделий на токарных станках по стадиям технологического процесса. — Москва : Академия, 2025. — 272 с.
+        </li>
+        <li class="biblio-item">
+          <span class="biblio-index">2.</span>
+          <strong>Глебов И. Т.</strong> Мастер столярного и мебельного производства : учебное пособие. — Москва ; Вологда : Инфра-Инженерия, 2026. — 320 с.
+        </li>
+        <li class="biblio-item">
+          <span class="biblio-index">3.</span>
+          <strong>Глебов И. Т.</strong> Обработка древесины на станке с ЧПУ : учебное пособие. — Москва ; Вологда : Инфра-Инженерия, 2026. — 240 с.
+        </li>
+        <li class="biblio-item">
+          <span class="biblio-index">4.</span>
+          <strong>Глебов И. Т.</strong> Подготовка станочника деревообрабатывающих станков : учебное пособие. — Москва ; Вологда : Инфра-Инженерия, 2026. — 280 с.
+        </li>
+        <li class="biblio-item">
+          <span class="biblio-index">5.</span>
+          <strong>Журавлев Б. А.</strong> Столярное дело : учебное пособие для учащихся 5-6 классов. — Москва : Просвещение, 1984. — 240 с.
+        </li>
+        <li class="biblio-item">
+          <span class="biblio-index">6.</span>
+          <strong>Сафин Р. Г., Степанова Т. О.</strong> Современные технологии производства изделий из древесины : учебное пособие. — Казань : КНИТУ, 2023. — 80 с.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <i class="fa-solid fa-compass-drafting" style="color: var(--primary); margin-right: 6px;"></i>
+        Мастер Столярных Работ
+      </div>
+      <div>© 2026 Абашов Алексей Евгеньевич. ГБПОУ «ОзТК». Все права защищены.</div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for Gallery View -->
+  <div class="modal" id="galleryModal">
+    <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+    <div id="modalContentWrapper" style="display: flex; flex-direction: column; align-items: center; gap: 15px; width: 100%;">
+      <!-- SVG or content is loaded here dynamically -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
